@@ -1,0 +1,835 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+/* -----------------------------------------------header----------------------------------- */
+
+header{
+   
+    height:70px;
+    border-bottom:1px solid rgb(155, 151, 151) ;
+    /* display: flex;
+    align-items: center; */
+   background-color: white;
+    padding-top: 10px;
+}
+.fisrt{
+   height: 70px;
+   display: flex;
+ 
+}
+.first .f{
+    display: flex;
+    padding-left: 0;
+    
+   
+}
+
+.first ul li a{
+    text-decoration: none;
+    color: #262626;
+    font-size: 14px;
+    
+    
+}
+
+
+ul li a:hover{
+    color: #262626;
+}
+
+ul li a i{
+    margin-right:5px;
+    margin-left: 6px;
+}
+.second{
+    display:flex;
+}
+.second ul li{
+    margin-right: 30px;
+    font-weight:500;
+    position: relative;
+}
+
+.second ul li::after{
+position: absolute;
+content: "";
+
+width:1px;
+height:40px;
+background-color: rgb(179, 174, 174);
+top: -5px;
+right:-10px
+}
+
+element.style {
+    position: absolute;
+    inset: 0px auto auto 0px;
+    margin: 0px;
+    transform: translate3d(0px, 58px, 0px) !important;
+   
+}
+
+.second ul li:nth-child(3)::after{
+    display: none;
+}
+
+.btn-secondary {
+    color:black;
+    background-color:transparent;
+    border:none
+}
+.dropdown a{
+    outline: none;
+    /* background-color: red; */
+    border: red;
+    border: none;
+}
+.dropdown a:focus{
+    border: none !important;
+    outline: none !important;
+    box-shadow: none!important;
+    
+}
+.dropdown .bt{
+    border: none !important;
+    outline: none !important;
+    box-shadow: none!important;
+    z-index: 99;
+}
+
+
+.second ul li .bt:focus{
+    border: none !important;
+    outline: none !important;
+    box-shadow: none!important;
+}
+
+.btn-secondary:hover{
+    background-color:transparent;
+    color:black;
+}
+element.style {
+    position: absolute !important;
+    inset: 0px auto auto 0px !important;
+    margin: 0px !important;
+    transform: translate3d(0px, 90px, 0px)!important;
+}
+.dropdown-menu.show {
+    display: block;
+}
+.dropdown-menu {
+    
+    width: 100px;
+  
+   margin-top: 100px;
+   background-color: #212529;
+  
+    border:none;
+    z-index: 999;
+   
+}
+
+
+.dropdown-item {
+    padding:2px 1rem;
+     color:white;
+     transition: all 0.5s;
+     text-transform: capitalize;
+     font-weight: 400;
+    
+   
+}
+
+.dropdown-item:hover{
+    background-color: #212529;
+    color: white;
+    transform: translatex(6px);
+}
+
+.dropdown-toggle::after {
+   display: none;
+}
+
+.btn:focus{
+    border: none !important;
+    outline: none !important;
+    box-shadow: none!important; 
+}
+
+/* --------------------------------------------------------header---------------------------------------- */
+@media screen and (min-width:320px) and (max-width:480px){
+   
+    
+header{
+   
+    height:auto;
+    padding-top: 20px;
+    z-index: 10;
+}
+
+.first .f{
+    flex-direction: column;  
+    margin: 0;
+}
+.first ul li{
+    margin-bottom: 10px;
+}
+
+.first ul li a{ 
+    font-size:16px;  
+}
+
+
+.second{
+   flex-direction: column;
+}
+.second ul {
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+.second a {
+    font-size: 14px;
+}
+.second ul li::after{
+    height: 20px;
+    top: 5px;
+    opacity: 0.5;
+
+}
+
+}
+
+
+/* ---------------------------------------------------------------navbar---------------------------------------- */
+
+nav{
+   
+    height: 80px;
+    background-color: white;
+    z-index: 10;
+  /* position: fixed !important; */
+  position: sticky !important;
+  top: 0 !important;
+    
+   
+
+
+}
+nav .btn-close{
+    opacity: 1;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    
+}
+.none1{
+    display: none;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    margin-left: 15px;
+    text-transform: capitalize;
+    
+}
+
+.nav-link{
+    color: black;
+    transition: all 0.5s;
+}
+
+.nav-link:hover{
+    color: red;
+}
+.active{
+    color: red;
+}
+
+
+.badge {
+ 
+    font-size:10px;
+   
+    background-color: red;
+}
+
+.nav-link:hover .badge{
+    
+}
+
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+    left:1070px !important;
+    width:300px !important;
+    height:auto !important;
+    padding-right: 20px !important;
+    background-color: #333;
+    padding-top: 30px !important;
+}
+/* -------------------------------------------------navbar---------------------------------- */
+
+@media screen and (min-width:320px) and (max-width:480px){
+    .none1{
+        display:block;
+    }
+    .none2{
+        display:none;
+    }
+
+    .navbar-expand-lg .navbar-nav .dropdown-menu{
+        position: absolute;
+        left:1070px !important;
+        width:auto !important;
+        height:auto !important;
+        padding-right: 20px !important;
+        background-color: #333;
+        padding-top: 30px !important;
+    }
+    .dropdown-menu{
+        width:270px !important;
+    }
+    
+    .drop {
+        
+        width:267px !important;
+        
+      }
+  
+      .drop .left {
+        width:70px;
+        
+      }
+      .drop .left {
+        width: 100%;
+      }
+  
+      .drop .right {
+        width:100px !important;
+        
+      }
+  
+      .drop .left img {
+        width: auto;
+        height: auto;
+      }
+
+      nav ul li{
+        /* margin-left: 0px; */
+        text-transform: capitalize;
+        
+    }
+  .second a{
+    padding:4px 3px;
+  }
+  .dropdown a{
+    padding:5px 3px;
+    width: 100px;
+  }
+  .second ul{
+    padding: 0 !important;
+   margin: 0;
+  }
+  .second ul li{
+    margin-right:auto;
+  }
+
+  .dropdown-menu.show {
+    display: block;
+    width: 100px !;
+    width: 100px !important;
+}
+
+li::after{
+    display: none !important;
+}
+
+.navbar .dropdown-menu.show {
+  
+    width: 280px !important;
+}
+}
+
+
+/* ------------------------------section 1---------------------------------------------- */
+
+.one{
+    background-image: url(../imgaes/shop/3.jpg);
+    height: 35vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.box {
+    text-align: center;
+    color: white;
+}
+.box h1{
+    
+    text-transform: capitalize;
+}
+
+.box ul li a{
+    color:white;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.5s;
+
+}
+.box ul li a:hover{
+    color:#EF4A38;
+}
+
+
+/* ------------------------------------------page2--------------------------------------------------- */
+.page2{
+    height:auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+.page2 .main{
+    /* border: 1px solid black; */
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+    clear: both;
+}
+.page2 .main:hover .box1{
+    transform: scale(1,1);
+}
+
+.page2 .main .box1{
+    position: absolute;
+    top: 0;
+   background-image: linear-gradient(rgba(255, 255, 255, 0.498),rgba(255, 255, 255, 0.543));
+   width: 100%;
+   height: 100%;
+   transition: all 0.5s;
+transform: scale(0,0);
+text-align: center;
+}
+
+.page2 .main .box {
+    overflow:hidden;
+    position: relative;
+}
+.page2 .main .box img{
+width: 100%;
+transform: scale(1.2);
+transition: all 0.5s;
+}
+.page2 .main:hover img{
+    transform: scale(1);
+}
+
+.page2 .main .box1 {
+    padding-top: 140px;
+}
+
+.page2 .main .box11 .small{
+display: flex;
+justify-content: space-between;
+}
+
+.page2 .main .box11 .small p span
+{
+    margin-left: 20px;
+}
+
+.page2 .main .box11 .small a{
+    color: #ef4836;
+    font-size: 16px;
+}
+.page2 .main .box11{
+    padding-top: 10px;
+}
+
+.page2 .main .box11 a{
+    text-decoration: none;
+
+    color: #212529;
+    font-weight: 500;
+    font-size: 22px;
+   
+}
+.page2 .main .box1 a i{
+    width:30px;
+    height:30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    transition: all 0.5s;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.page2 .container .nav-item button{
+    text-transform: capitalize;
+    border: 2px solid #ef4836;
+    margin-right: 10px;
+    border-radius: 0;
+    margin-bottom: 10px;
+  
+}
+
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+  
+    background-color: red;
+}
+
+.page2 .main .box1 a i:hover{
+    background-color: #ef4836;
+}
+
+/* ----------------------------------------page2 media---------------------------------------- */
+@media screen and (min-width:320px) and (max-width:480px){
+    .page2{
+        height: auto;
+        padding-top: 30px;
+    }
+    .page2 .container .nav-item button{
+        text-transform: capitalize;
+        border: 2px solid #ef4836;
+        margin-right: 10px;
+        border-radius: 0;
+        margin-bottom: 10px;
+        font-size: 14px;
+      
+    }
+}
+
+
+
+
+
+
+
+
+
+/* ---------------------------------page8------------------------------------------------- */
+.page8{
+    text-align: center;
+    height: 40vh;
+    background-color: #272a2d;
+   
+}
+.page8 .box{
+    color: white;
+    text-align: center;
+}
+
+.page8 .box .d-flex input{
+    width: 600px;
+    height: 60px;
+    background-color: #3a3f42;
+    border: none;
+    border-bottom-left-radius: 50px;
+border-top-left-radius: 50px;
+padding-left: 20px;
+color: white;
+text-transform: capitalize;
+font-size: 20px;
+}
+.page8 .box .d-flex{
+    margin-top: 30px;
+}
+
+.page8 .box .d-flex input:focus{
+    outline: none;
+}
+
+.page8 .box .d-flex input::placeholder{
+    font-size:20px ;
+}
+.page8 .box .d-flex a{
+    width: 70px;
+    height: 60px;
+    background-color:#3a3f42;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    color:antiquewhite;
+}
+
+/* ----------------------------------------page8 media---------------------------------------- */
+@media screen and (min-width:320px) and (max-width:480px){
+    .page8{
+      padding: 0 20px;
+    }
+    .page8 .box{
+        width: 100%;
+    }
+  
+    .page8 .box .d-flex a{
+        width: 120px;
+        height: 60px;
+    
+    }
+}
+/* ---------------------------------------------------------footer--------------------------------------- */
+
+footer{
+    background-color: #222528;
+    height: 45vh;
+    border-top: 1px solid rgba(128, 128, 128, 0.301);
+    text-align: center;
+    color: white;
+}
+/* footer .d-flex{
+    height: px;
+} */
+footer .d-flex ul li{
+    margin-right: 20px;
+    text-transform:capitalize;
+    color: rgb(127, 124, 124);
+}
+
+footer .d-flex ul li a{
+    text-decoration: none;
+    color: rgb(168, 163, 163);
+    transition: all 0.5s;
+}
+.ram{
+    padding: 0 !important;
+    margin: 0!important;
+    display: flex;
+    align-items: center;
+}
+
+footer .d-flex ul li a:hover{
+    color: #ef4836;
+}
+.cus p{
+    color: rgb(169, 162, 162);
+}
+.smt{
+    /* border: 1px solid red; */
+    width: 300px;
+}
+.cus1 p{
+color: rgb(127, 127, 61);
+}
+
+.cus1 p span{
+    color: rgb(169, 162, 162);
+    transition: all 0.5s;
+}
+
+.cus1 p span:hover{
+    color:#ef4836;
+    cursor: pointer;
+}
+
+/* ----------------------------------------footer media---------------------------------------- */
+@media screen and (min-width:320px) and (max-width:480px){
+    
+footer{
+    height:auto;
+}
+footer .foot{
+    height:auto;
+    flex-direction: column;
+    /* height:500px; */
+}
+.med{
+   padding: 0!important;
+    
+}
+.smt{
+    padding: 0 !important;
+    margin: 0!important;
+    
+}
+.lin{
+    display: none !important;
+}
+
+.vr{
+    display: none;
+}
+.copy{
+    text-align: center !important;
+    margin-top: 30px;
+}
+
+}
+
+.gotop{
+    
+   position: fixed;
+   bottom:20px;
+   right: 20px;
+   z-index: 999;
+   
+}
+.gotop a{
+    text-decoration: none;
+}
+.gotop a i{
+    width: 40px;
+    height: 40px;
+    background-color: #ef4836;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------modal------------------------------------------- */
+
+
+.modal .modal-header {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom: none;
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+}
+
+
+.modal .pagination .page-item .page-link{
+    background-color: rgb(180, 176, 176) !important;
+    color: white;
+}
+.modal .pagination .active .page-link{
+    /* box-shadow: none !important; */
+    /* outline: none !important; */
+    border: none !important;
+    background-color: rgb(57, 56, 56) !important;
+}
+.modal .pagination .page-link{
+    /* background-color: #0876e4; */
+    /* border: none !important; */
+    box-shadow: none !important;
+    outline: none !important;
+} 
+
+.modal .btn-close {
+    box-sizing: content-box;
+    width: 40px;
+    height: 30px;
+    padding: 0.25em;
+    background-color: #ef4836;
+
+    opacity: 1;
+}
+
+.modal .btn-close:hover {
+    background-color: gray;
+    opacity: 1;
+}
+
+.modal.card-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.modal .card-body {
+    border: none;
+}
+
+.modal .card-body p {
+    font-size: 16px;
+}
+
+.modal .card-body p i {
+    color: #ef4836;
+
+}
+
+.modal .card-body p span {
+    margin-left: 170px;
+}
+
+
+.modal .card-body .d-flex a button {
+    background-color: #ef4836;
+    border: none;
+    padding: 4px 10px;
+    text-transform: capitalize;
+    color: white;
+    margin-left: 50px;
+}
+
+.modal .card-body .d-flex a button:hover {
+    background-color: #212529;
+}
+
+
+.modal .card-body .line {
+    display: flex;
+}
+
+.modal .card-body .line h1 {
+    font-size: 20px;
+}
+
+.modal .card-body .line ul {
+    display: flex;
+}
+
+.modal .card-body .line ul li {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #212529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.modal .card-body .line ul li:hover {
+    background-color: #ef4836;
+}
+
+.modal .card-body .line ul li a {
+
+    color: white;
+    text-decoration: none;
+}
+
+.modal .card-title {
+    font-size: 20px;
+}
+
+.modal .btn-close {
+    box-shadow: none !important;
+    outline: none !important;
+    
+}

@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/product.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  <style>
+    .accordion-button::after {
+
+      background-image: url(../imgaes/prodcut/icons8-macos-maximize-30.png);
+      color: white;
+
+
+    }
+
+    .accordion-button:not(.collapsed)::after {
+
+      background-image: url(../imgaes/prodcut/icons8-minus-sign-24.png);
+      transform: rotate(-180deg);
+    }
+
+    .drop {
+      /* border: 1px solid rgb(225, 8, 8) !important; */
+      /* width: 400px !important; */
+      height: auto !important;
+      background-color: #333;
+      border: none !important;
+    }
+
+    .drop .left {
+      width: 100px;
+      /* border: 1px solid rgb(225, 8, 8) !important; */
+    }
+
+    .drop .right {
+      width: auto;
+      /* border: 1px solid rgb(214, 60, 18) !important; */
+    }
+
+    .drop .left img {
+      width: auto;
+      height: auto;
+    }
+
+    .drop .right a {
+      font-size: 14px !important;
+      color: white !important;
+      text-decoration: none !important;
+      transition: all 0.5s;
+    }
+
+    .drop .right a:hover {
+      color: red !important;
+    }
+
+    .drop .right p {
+      font-size: 12px;
+      color: white !important;
+      margin: 0 !important;
+    }
+
+    .alert-dismissible .btn-close {
+      position: absolute;
+      top: 10px !important;
+      right: 10px !important;
+      z-index: 2;
+      padding: 0 !important;
+      color: white !important;
+      background-color: white !important;
+      /* background-color: white!important; */
+      box-shadow: none !important;
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+
+    }
+  </style>
+  <title>tohoney/product</title>
+</head>
+
+<body>
+
+
+
+
+  <!-- -----------------------------------------------------header-------------------------------------------- -->
+  <header>
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg-8 first col-md-12 col-12">
+          <ul class="f h-100 d-flex align-items-center">
+            <li class="me-4 "><a href=""><i class="fa fa-phone" aria-hidden="true"></i>+01 123 456 789</a>
+            </li>
+            <li><a href=""><i class="fa fa-envelope" aria-hidden="true"></i>youremail@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 second col-md-12 col-12">
+          <ul class="d-flex">
+            <li>
+
+
+              <div class="dropdown">
+                <a class="btn dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                  <i class="fa fa-user" aria-hidden="true"></i> My Account<i class="fa fa-angle-down"
+                    aria-hidden="true"></i>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../html/contact.html">Login</a></li>
+                  <li><a class="dropdown-item" href="../html/contact.html">Register</a></li>
+                  <li><a class="dropdown-item" href="../html/product.html">chart</a></li>
+                  <li><a class="dropdown-item" href="../html/wishlist.html">whishlist</a></li>
+                  <li><a class="dropdown-item" href="../html/shop.html">shop</a></li>
+                </ul>
+              </div>
+
+            <li> <a href="../html/contact.html" class="btn">Login/Register</a> </li>
+            <li> <a class="btn bt  dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                USD<i class="fa fa-angle-down" aria-hidden="true"></i>
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">GBP</a></li>
+                <li><a class="dropdown-item" href="#">CAD</a></li>
+                <li><a class="dropdown-item" href="#">CHF</a></li>
+                <li><a class="dropdown-item" href="#">AUD</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ---------------------------------------navbar---------------------------------------------- -->
+
+  <nav class="navbar navbar-expand-lg " >
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="../imgaes/home/logo.png" alt=""></a>
+      <li class="nav-item none1">
+        <a class="nav-link " href="#" class="btn btn-primary position-relative"
+          class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+          data-bs-toggle="dropdown"><i class="fa fa-heart-o" aria-hidden="true"></i>
+          <span class="position-absolute translate-middle badge rounded-pill bg-dangures">2 <span
+              class="visually-hidden">unread messages</span></span>
+        </a>
+
+
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+          <li>
+
+            <div class="row border drop mb-3 alert alert-dismissible border dropdown-item1">
+
+              <div class="col-lg-4 col-md-4 col-3 left">
+                <img src="../imgaes/home/1.jpg" alt="">
+              </div>
+              <div class="col-g-8 col-md-8 col-9 right">
+                <a href="">pure nature <br> product </a>
+                <p>QTY:1</p>
+                <p>$350</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+
+              </div>
+            </div>
+          </li>
+          <li>
+
+            <div class="row border drop  mb-3 alert alert-dismissible border dropdown-item1">
+
+              <div class="col-lg-4 col-md-4 col-3 left">
+                <img src="../imgaes/home/2.jpg" alt="">
+              </div>
+              <div class="col-md-8 col-md-8 col-9 right">
+                <a href="">pure nature <br> product </a>
+                <p>QTY:1</p>
+                <p>$350</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+
+              </div>
+            </div>
+
+          </li>
+
+        </ul>
+
+      </li>
+
+      <li class="nav-item none1">
+        <a class="nav-link " href="#" class="btn btn-primary position-relative"
+          class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+          data-bs-toggle="dropdown"><i class="fa fa-shopping-bag" aria-hidden="true"></i>
+          <span class="position-absolute top-10px start-90 translate-middle badge rounded-pill bg-dangures">3 <span
+              class="visually-hidden">unread messages</span></span>
+        </a>
+
+
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+          <li>
+
+            <div class="row border drop mb-3 alert alert-dismissible border dropdown-item1">
+
+              <div class="col-lg-4 col-md-4 col-3 left">
+                <img src="../imgaes/home/1.jpg" alt="">
+              </div>
+              <div class="col-lg-8 col-md-8 col-3 right">
+                <a href="">pure nature <br> product </a>
+                <p>QTY:1</p>
+                <p>$350</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+
+              </div>
+            </div>
+          </li>
+          <li>
+
+            <div class="row border drop  mb-3 alert alert-dismissible border dropdown-item1">
+
+              <div class="col-md-4 col-lg-4 col-3 left">
+                <img src="../imgaes/home/3.jpg" alt="">
+              </div>
+              <div class="col-md-8 col-lg-8 col-9 right">
+                <a href="">pure nature <br> product </a>
+                <p>QTY:1</p>
+                <p>$350</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+
+              </div>
+            </div>
+
+          </li>
+          <li>
+
+            <div class="row border drop  mb-3 alert alert-dismissible border dropdown-item1">
+
+              <div class="col-md-4 col-lg-4 col-3 left">
+                <img src="../imgaes/home/2.jpg" alt="">
+              </div>
+              <div class="col-md-8 col-lg-8 col-9 right">
+                <a href="">pure nature <br> product </a>
+                <p>QTY:1</p>
+                <p>$350</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+
+              </div>
+            </div>
+
+          </li>
+
+        </ul>
+
+      </li>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+        <span class="material-symbols-outlined">
+          menu
+        </span>
+      </button>
+
+      <div class="offcanvas offcanvas-top h-50" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../imgaes/home/logo.png" alt=""></h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="../../index.html">home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="../html/shop.html">shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="../html/shop2.html">slidebar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active " href="../html/product.html">product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="../html/wishlist.html">wishlist</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="../html/contact.html">contact</a>
+            </li>
+
+            <li class="nav-item none2">
+              <a class="nav-link " href="#" class="btn btn-primary position-relative"
+                class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                data-bs-toggle="dropdown"><i class="fa fa-heart-o" aria-hidden="true"></i>
+                <span class="position-absolute translate-middle badge rounded-pill bg-dangures">2 <span
+                    class="visually-hidden">unread messages</span></span>
+              </a>
+
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                <li>
+
+                  <div class="row border drop mb-3 alert alert-dismissible border dropdown-item1">
+
+                    <div class="col-4 left">
+                      <img src="../imgaes/home/1.jpg" alt="">
+                    </div>
+                    <div class="col-8 right">
+                      <a href="">pure nature <br> product </a>
+                      <p>QTY:1</p>
+                      <p>$350</p>
+                      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+
+                    </div>
+                  </div>
+                </li>
+                <li>
+
+                  <div class="row border drop  mb-3 alert alert-dismissible border dropdown-item1">
+
+                    <div class="col-md-4 left">
+                      <img src="../imgaes/home/2.jpg" alt="">
+                    </div>
+                    <div class="col-md-8 right">
+                      <a href="">pure nature <br> product </a>
+                      <p>QTY:1</p>
+                      <p>$350</p>
+                      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+
+                    </div>
+                  </div>
+
+                </li>
+
+              </ul>
+
+            </li>
+
+
+            <li class="nav-item none2">
+              <a class="nav-link " href="#" class="btn btn-primary position-relative"
+                class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                data-bs-toggle="dropdown"><i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                <span class="position-absolute top-10px start-90 translate-middle badge rounded-pill bg-dangures">3
+                  <span class="visually-hidden">unread messages</span></span>
+              </a>
+
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                <li>
+
+                  <div class="row border drop mb-3 alert alert-dismissible border dropdown-item1">
+
+                    <div class="col-4 left">
+                      <img src="../imgaes/home/1.jpg" alt="">
+                    </div>
+                    <div class="col-8 right">
+                      <a href="">pure nature <br> product </a>
+                      <p>QTY:1</p>
+                      <p>$350</p>
+                      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+
+                    </div>
+                  </div>
+                </li>
+                <li>
+
+                  <div class="row border drop  mb-3 alert alert-dismissible border dropdown-item1">
+
+                    <div class="col-md-4 left">
+                      <img src="../imgaes/home/3.jpg" alt="">
+                    </div>
+                    <div class="col-md-8 right">
+                      <a href="">pure nature <br> product </a>
+                      <p>QTY:1</p>
+                      <p>$350</p>
+                      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+
+                    </div>
+                  </div>
+
+                </li>
+                <li>
+
+                  <div class="row border drop  mb-3 alert alert-dismissible border dropdown-item1">
+
+                    <div class="col-md-4 left">
+                      <img src="../imgaes/home/2.jpg" alt="">
+                    </div>
+                    <div class="col-md-8 right">
+                      <a href="">pure nature <br> product </a>
+                      <p>QTY:1</p>
+                      <p>$350</p>
+                      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+
+                    </div>
+                  </div>
+
+                </li>
+
+              </ul>
+
+            </li>
+
+
+          </ul>
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </nav>
+  <!-- ------------------------------------------one------------------------------------------------ -->
+  
+  <section class="one d-flex justify-content-center align-items-center" id="home">
+
+    <div class="box">
+      <h1>product</h1>
+      <ul class="d-flex ">
+        <li class="me-2"><a href="../html/home.html">home</a> /</li>
+        <li><a href="../html/shop.html">shop</a></li>
+      </ul>
+    </div>
+  </section>
+
+
+
+
+  <!-- ----------------------------page2------------------------------------------- -->
+  <div class="page2">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-12 left">
+
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active on"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2" class="two"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3 " class="three"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../imgaes/prodcut/1 (1).jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../imgaes/prodcut/2 (1).jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../imgaes/prodcut/3 (2).jpg" class="d-block w-100" alt="...">
+              </div>
+
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+
+          </div>
+          <div class="box8">
+
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <h1 class="head">nature honey</h1>
+          <div class="right">
+            <div class="row">
+              <div class="col-lg-6 col-12 ">
+                <h2>$219.56</h2>
+              </div>
+              <div class="col-lg-6 col-12">
+                <p class="ms-auto"> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
+                    aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
+                    aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i> (05 Customar Review)</p>
+              </div>
+            </div>
+
+
+          </div>
+
+          <p class="theory">On the other hand, we denounce with righteous indignation and dislike men who are so
+            beguiled and
+            demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain
+            and trouble that are bound to ensue; and equal blame belongs</p>
+          <small>
+            <div class="row">
+              <div class="col-lg-3 col-6">
+                <ul class="pagination">
+
+                  <li class="page-item"><a class="page-link" href="#">-</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">+</a></li>
+
+                </ul>
+              </div>
+              <div class="col-lg-9 col-6 but">
+                <a href=""><button>add to cart</button></a>
+              </div>
+            </div>
+
+
+          </small>
+          <p class="base">Categories: Honey, Olive</p>
+          <p>Color:</p>
+          <div class="box1">
+            <div class="small-box">
+              <div class="small"></div>
+            </div>
+            <div class="small-box">
+              <div class="small"></div>
+            </div>
+            <div class="small-box">
+              <div class="small"></div>
+            </div>
+            <div class="small-box">
+              <div class="small"></div>
+            </div>
+          </div>
+          <p>size:</p>
+          <div class="box2">
+            <div class="small-box1"><button>s</button></div>
+            <div class="small-box1"><button>m</button></div>
+            <div class="small-box1"><button>l</button></div>
+            <div class="small-box1"><button>xl</button></div>
+          </div>
+          <div class="share">
+            <p>share:</p>
+            <ul>
+              <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- --------------------------------page3------------------------------------------------------------ -->
+
+  <div class="page3">
+    <div class="container">
+      <ul class="nav nav-pills mb-3 " id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+            type="button" role="tab" aria-controls="pills-home" aria-selected="true">description</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+            type="button" role="tab" aria-controls="pills-profile" aria-selected="false">faq</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link " id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+            type="button" role="tab" aria-controls="pills-contact" aria-selected="false">review</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="box4">
+            <p>we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms
+              of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are
+              bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is
+              the same as saying through shrinking from toil and pain.</p>
+            <p>these cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is
+              untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be
+              welcomed and every pain avoided.</p>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <div class="box5">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    genral enquaries ?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                    labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    how to use ?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                    labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    shipping and delivery ?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                    labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapseThree">
+                    additional information ?
+                  </button>
+                </h2>
+                <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                    labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapseThree">
+                    return policy ?
+                  </button>
+                </h2>
+                <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                    labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+          <div class="row mb-4">
+            <div class="col-lg-1 col-md-1 col-12">
+              <img src="../imgaes/prodcut/150.png" alt="">
+            </div>
+            <div class="col-lg-10 col-12 ms-2 ">
+              <div class="row">
+                <div class="col-lg-10 col-7">
+                  <h2 class="nam">GERALD BARNES</h2>
+                  <h3 class="date">27 JUN, 2019 AT 2:30PM</h3>
+                </div>
+                <div class="col-lg-2 col-5">
+                  <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                    class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                    class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <p class="det">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan egestas elese
+                    ifend. Phasellus a felis at estei to bibendum <br> feugiat ut eget eni Praesent et messages in con
+                    sectetur posuere dolor non.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row  ms-2 mb-4">
+            <div class="col-lg-1 col-md-1 col-12">
+              <img src="../imgaes/prodcut/160.png" alt="">
+            </div>
+            <div class="col-lg-10 col-12  ms-2 ">
+              <div class="row">
+                <div class="col-lg-10 col-7">
+                  <h2 class="nam">OLIVE OIL</h2>
+                  <h3 class="date">15 MAY, 2019 AT 2:30PM</h3>
+                </div>
+                <div class="col-lg-2 col-5">
+                  <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                    class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                    class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <p class="det">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan egestas elese
+                    ifend. Phasellus a felis at estei to bibendum <br> feugiat ut eget eni Praesent et messages in con
+                    sectetur posuere dolor non.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-lg-1 col-12">
+              <img src="../imgaes/prodcut/170.png" alt="">
+            </div>
+            <div class="col-lg-10 col-12 ms-2  ">
+              <div class="row">
+                <div class="col-lg-10 col-7">
+                  <h2 class="nam">NATURE HONEY</h2>
+                  <h3 class="date">4 JANU, 2019 AT 2:30PM</h3>
+                </div>
+                <div class="col-lg-2 col-5">
+                  <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                    class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                    class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <p class="det">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan egestas elese
+                    ifend. Phasellus a felis at estei to bibendum <br> feugiat ut eget eni Praesent et messages in con
+                    sectetur posuere dolor non.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h1 class="tab-head">ADD A REVIEW</h1>
+          <div class="ratting-wrap">
+            <table class="table-responsive">
+              <thead>
+                <tr>
+                  <th>task</th>
+                  <th>1 Star</th>
+                  <th>2 Star</th>
+                  <th>3 Star</th>
+                  <th>4 Star</th>
+                  <th>5 Star</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Price</td>
+                  <td>
+                    <input type="radio" name="a">
+                  </td>
+                  <td>
+                    <input type="radio" name="a">
+                  </td>
+                  <td>
+                    <input type="radio" name="a">
+                  </td>
+                  <td>
+                    <input type="radio" name="a">
+                  </td>
+                  <td>
+                    <input type="radio" name="a">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Value</td>
+                  <td>
+                    <input type="radio" name="a">
+                  </td>
+                  <td>
+                    <input type="radio" name="a">
+                  </td>
+                  <td>
+                    <input type="radio" name="a">
+                  </td>
+                  <td>
+                    <input type="radio" name="a">
+                  </td>
+                  <td>
+                    <input type="radio" name="a">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Quality</td>
+                  <td>
+                    <input type="radio" name="a">
+                  </td>
+                  <td>
+                    <input type="radio" name="a">
+                  </td>
+                  <td>
+                    <input type="radio" name="a">
+                  </td>
+                  <td>
+                    <input type="radio" name="a">
+                  </td>
+                  <td>
+                    <input type="radio" name="a">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="row mt-5 cont">
+            <div class="col-md-6 col-12">
+              <h4>Name:</h4>
+              <input type="text" placeholder="Your name here...">
+            </div>
+            <div class="col-md-6 col-12">
+              <h4>Email:</h4>
+              <input type="email" placeholder="Your Email here...">
+            </div>
+            <div class="col-12">
+              <h4 class="review">Your Review:</h4>
+              <textarea name="massage" id="massage" cols="30" rows="10" placeholder="Your review here..."></textarea>
+            </div>
+            <div class="col-12">
+              <button class="btn-style ">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ----------------------------------------page4---------------------------------------------------- -->
+
+  <div class="page4 mt-5">
+    <div class="container">
+      <h1>Related Product</h1>
+      <div class="row mt-5">
+        <div class="col-lg-3 col-12">
+          <div class="box">
+            <div class="img-box">
+              <img src="../imgaes/prodcut/1 (2).jpg" alt="">
+            </div>
+          </div>
+          <div class="sm-box">
+            <div class="row">
+              <div class="col-9 lef">
+                <h1>nature honey</h1>
+                <p>$219.56</p>
+              </div>
+              <div class="col-3 rig">
+                <a href="wishlist.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-heart" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-12">
+          <div class="box">
+            <div class="img-box">
+              <img src="../imgaes/prodcut/2 (2).jpg" alt="">
+            </div>
+          </div>
+          <div class="sm-box">
+            <div class="row">
+              <div class="col-9 lef">
+                <h1>nature honey</h1>
+                <p>$219.56</p>
+              </div>
+              <div class="col-3 rig">
+                <a href="wishlist.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-heart" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-12">
+          <div class="box">
+            <div class="img-box">
+              <img src="../imgaes/prodcut/3 (3).jpg" alt="">
+            </div>
+          </div>
+          <div class="sm-box">
+            <div class="row">
+              <div class="col-9 lef">
+                <h1>nature honey</h1>
+                <p>$219.56</p>
+              </div>
+              <div class="col-3 rig">
+                <a href="wishlist.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-heart" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-12">
+          <div class="box">
+            <div class="img-box">
+              <img src="../imgaes/prodcut/4 (1).jpg" alt="">
+            </div>
+          </div>
+          <div class="sm-box">
+            <div class="row">
+              <div class="col-9 lef">
+                <h1>nature honey</h1>
+                <p>$219.56</p>
+              </div>
+              <div class="col-3 rig">
+                <a href="wishlist.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-heart" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ---------------------------------------page8------------------------------------------ -->
+  <div class="page8 d-flex justify-content-center align-items-center">
+    <div class="box">
+      <h1>Subscribe Newsletter</h1>
+      <div class="d-flex">
+        <input type="text" placeholder="Enter you emain address...">
+        <a href=""><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
+      </div>
+
+
+    </div>
+  </div>
+
+
+  <!-- -------------------------------------------------footer----------------------------------------- -->
+
+  <footer>
+    <div class="box111 d-flex justify-content-center p-5">
+      <ul class="d-flex foot">
+        <li><a href="">home</a></li>
+        <li>/</li>
+        <li><a href="">Our story</a></li>
+        <li>/</li>
+        <li><a href="">feed shop</a></li>
+        <li>/</li>
+        <li><a href="">how to eat blog</a></li>
+        <li>/</li>
+        <li><a href="">contact</a></li>
+
+      </ul>
+    </div>
+
+    <div class="container">
+      <hr class="mb-5">
+
+      <div class="row">
+        <div class="col-lg-2 col-md-12 col-12 cus d-flex">
+          <ul class="d-flex med me-3 justify-content-center align-items-center">
+            <li class="m-1"><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li class="m-1"><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li class="m-1"><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li class="m-1"><a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+          </ul>
+          <div class="d-flex lin" style="height: 120px;">
+            <div class="vr"></div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 col-12 cus d-flex justify-content-center align-items-center">
+          <p class="text-start">On the other hand, we denounce with righteous indignation and dislike men who are so
+            beguiled and demoralized by the charms of pleasure righteous indignation and dislike</p>
+          <div class="d-flex lin" style="height: 120px;">
+            <div class="vr"></div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-12 col-12 cus1 d-flex align-items-center">
+          <div class="smt">
+            <p class="text-start m-1">Email: <span>domain@gmail.com</span></p>
+            <p class="text-start m-1">tel: <span>8369039831</span></p>
+            <p class="text-start m-1">Email: <span>domain@gmail.com</span></p>
+          </div>
+
+          <div class="d-flex lin" style="height: 120px;">
+            <div class="vr"></div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-12 col-12 cus d-flex justify-content-center align-items-center copy">
+          <p class="text-start copy">copyright @2019 tohoney All right reserverd.</p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="gotop">
+      <a href="#home"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></a>
+    </div>
+
+  </footer>
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
