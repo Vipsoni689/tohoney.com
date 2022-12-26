@@ -884,7 +884,7 @@ transition: all 0.8s;
 .page4 .container .img-box:hover::after{
 opacity: 1;
 
-transform: translateY(350px);
+transform: translateY(500px);
 }
 .page4 .container .sm-box{
     margin-top: 20px;
