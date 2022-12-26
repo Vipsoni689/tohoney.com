@@ -930,6 +930,11 @@ transform: translateY(500px);
     .page4{
         height: auto;
     }
+     .page4 .container .img-box:hover::after{
+        opacity: 1;
+        
+        transform: translateY(500px);
+        }
 }
 
 
